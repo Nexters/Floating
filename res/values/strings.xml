@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FLOATING</string>
+    <string name="slot1">벚꽃엔딩</string>
+    <string name="slot2">겨울왕국</string>
+    <string name="slot3">구름동동</string>
+    <string name="slot4">반짝별</string>
+    <string name="slot5">롤리폴리</string>
+    <string name="slot6">하트하트</string>
+    <string name="slot7">까망이</string>
+    <string name="slot8">단델리온</string>
+    <string name="slot9">치렐루야</string>
+    
+    <string name="slot10">헬리코박터</string>
+    <string name="slot11">팩맨</string>
+    <string name="slot12">뽀뽀</string>
+    <string name="slot13">은행잎</string>
+    <string name="slot14">종이비행기</string>
+    <string name="slot15">장미</string>
+    <string name="slot16">가을밤</string>
+    <string name="slot17">무당벌레</string>
+    <string name="slot18">가을밤</string>
+    <string name="slot19">가르송</string>
+    <string name="slot20">버블팝</string>
+    <string name="slot21">꼼지락</string>
+    <string name="slot22">까탈레나</string>
+    <string name="slot23">달콤마카롱</string>
+    <string name="slot24">마그리트</string>
+    <string name="slot25">까오나시</string>
+    <string name="slot26">별에서 온</string>
+    <string name="slot27">노랑오리</string>
+    
+    <string name="userItems">사용자아이템</string>
+	
+    <string name="cannot_delete_using_item">사용중인 아이템은 삭제할 수 없습니다</string>
+    <string name="cannot_delete_default_item">기본 아이템은 삭제할 수 없습니다</string>
+    <string name="delete_complete">삭제되었습니다</string>
+    
+    <string name="notify_ticker">FLOATING</string>
+    <string name="notify_title">FLOATING</string>
+    <string name="notify_text">클릭해서 들어가기</string>
+    <string name="off">끄기</string>
+    
+    <string name="settingTitle">설정</string>
+    <string name="confirm">확인</string>
+    
+    <string name="fallingEffect">뿌리기</string>
+    <string name="rollingEffect">데굴데굴</string>
+    <string name="dollEffect">인형옷</string>
+    <string name="chooseEffect">효과 선택하기</string>
+    <string name="makeEffect">효과 만들기</string>
+    
+    <string name="help">도움말</string>
+    <string name="share">공유하기</string>
+    <string name="mail">메일 보내기</string>
+    
+    <string name="size">크기</string>
+    <string name="amount">양</string>
+    <string name="speed">속도</string>
+    <string name="alpha">투명도</string>
+    <string name="setting_detail_text">양 설정은 확인을 누른 후에 적용됩니다</string>
+    
+    <string name="need_animation">애니매이션 효과를 선택하세요</string>
+    <string name="need_image">이미지를 세팅해주세요</string>
+    <string name="saved">커스텀 아이템이 생성되었습니다</string>
+    <string name="off_current_item">현재 적용되어 있는 아이템을 끄고 선택해 주세요</string>
+    <string name="prepared_effect">준비중인 애니매이션 효과입니다</string>
+    
+    <string name="select_image">사진선택</string>
+    <string name="capture_photo">사진촬영</string>
+    <string name="pic_photo">앨범선택</string>
+    
+    <string name="cancel">취소</string>
+    <string name="delete">삭제</string>
+    
+    <string name="delete_item">해당아이템을 삭제하시겠습니까?</string>
+    
+    <string name="make_custom_item_dialog_title">사용자 아이템의 이름을 설정하세요</string>
+</resources>

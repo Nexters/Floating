@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/actionbar_black" >
+
+    <TextView
+        android:id="@+id/tabview_effect_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/centerLine"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/chooseEffect"
+        android:textColor="@color/tabview_btn_text"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/centerLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/slice_line" />
+
+    <TextView
+        android:id="@+id/tabview_effect_make"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/centerLine"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/makeEffect"
+        android:textColor="@color/tabview_btn_text"
+        android:textSize="19sp" />
+
+</RelativeLayout>

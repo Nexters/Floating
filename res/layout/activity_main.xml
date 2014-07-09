@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7e3"
+    android:orientation="vertical" >
+
+    <kr.nexters.eightweeks.widget.FSActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </kr.nexters.eightweeks.widget.FSActionBar>
+
+    <kr.nexters.eightweeks.widget.FSTabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </kr.nexters.eightweeks.widget.FSTabView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageButton
+            android:id="@+id/effect_deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8.5dp"
+            android:background="@drawable/delete_button_selector" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/effect_deleteButton"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:verticalSpacing="40dp" >
+        </GridView>
+
+        <kr.nexters.eightweeks.widget.FSEffectView
+            android:id="@+id/effectView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </kr.nexters.eightweeks.widget.FSEffectView>
+    </RelativeLayout>
+
+</LinearLayout>

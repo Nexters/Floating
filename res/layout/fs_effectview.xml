@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="23.5dp" >
+
+        <RelativeLayout
+            android:id="@+id/boximage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginRight="14.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/box_top_"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:id="@+id/makeload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/make_load" />
+
+            <ImageView
+                android:id="@+id/picturechoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/slot_white" />
+
+            <ImageView
+                android:id="@+id/picture_plus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/picturechoose"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/item_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/boximage02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boximage"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginRight="14.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/box_top_" >
+
+            <ImageView
+                android:id="@+id/makechoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/make_choose" />
+
+            <RelativeLayout
+                android:id="@+id/slecteffect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/makechoose"
+                android:paddingBottom="23dp"
+                android:paddingTop="24.5dp" >
+
+                <ImageView
+                    android:id="@+id/ly_effect01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:background="@drawable/shape_59_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ly_effect01"
+                    android:layout_alignRight="@+id/ly_effect01"
+                    android:layout_below="@+id/ly_effect01"
+                    android:layout_marginTop="15.5dp"
+                    android:gravity="center"
+                    android:text="@string/fallingEffect"
+                    android:textColor="#464646"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ly_effect02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_60_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ly_effect02"
+                    android:layout_alignRight="@+id/ly_effect02"
+                    android:layout_below="@+id/ly_effect02"
+                    android:layout_marginTop="15.5dp"
+                    android:gravity="center"
+                    android:text="@string/rollingEffect"
+                    android:textColor="#464646"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ly_effect03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/shape_61_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ly_effect03"
+                    android:layout_alignRight="@+id/ly_effect03"
+                    android:layout_below="@+id/ly_effect03"
+                    android:layout_marginTop="15.5dp"
+                    android:gravity="center"
+                    android:text="@string/dollEffect"
+                    android:textColor="#464646"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/savebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boximage02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22.5dp"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/save_button" />
+    </RelativeLayout>
+
+</ScrollView>
