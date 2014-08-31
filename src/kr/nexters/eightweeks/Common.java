@@ -58,6 +58,14 @@ public class Common {
 	    FSParticleDrawManager.getInstance().clearParticle();
 	}
 	
+	public static void pausePlay() {
+		FSParticleDrawManager.getInstance().pause();
+	}
+	
+	public static void resumePlay() {
+		FSParticleDrawManager.getInstance().resume();
+	}
+	
 	public static boolean isPlay() {
 	    return isPlay;
 	}

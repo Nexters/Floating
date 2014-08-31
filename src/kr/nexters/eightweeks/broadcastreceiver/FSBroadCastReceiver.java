@@ -1,15 +1,13 @@
 package kr.nexters.eightweeks.broadcastreceiver;
 
+import kr.nexters.eightweeks.Common;
+import kr.nexters.eightweeks.FSActivity;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
-
-import kr.nexters.eightweeks.Common;
-import kr.nexters.eightweeks.FSActivity;
 
 public class FSBroadCastReceiver extends BroadcastReceiver {
 
@@ -26,6 +24,10 @@ public class FSBroadCastReceiver extends BroadcastReceiver {
             onActionNotification(intent);
         } else if(action.equals(ACTION_REQ_START_MAIN_ACT)) {
             onActionStartMainActivity(context);
+        } else if(action.equals(Intent.ACTION_SCREEN_ON)) {
+        	Common.resumePlay();
+        } else if(action.equals(Intent.ACTION_SCREEN_OFF)) {
+        	Common.pausePlay();
         }
     }
     

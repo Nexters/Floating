@@ -24,6 +24,8 @@ public class FSParticleDrawManager {
 	private List<Particle> mList;
 	private List<Particle> mRemovedList;
 	
+	private boolean isPause = false;
+	
 	private static int count = 0;
 	
 	public static FSParticleDrawManager getInstance() {
@@ -79,10 +81,26 @@ public class FSParticleDrawManager {
 			        } catch(IllegalArgumentException e) {
 			        	e.printStackTrace();
 			        }
+			        if(isPause) {
+			        	break;
+			        }
 			        removeParticle();
 			    }
+			    isPause = false;
+			    if(mTimer != null) {
+			        mTimer.cancel();
+			        mTimer = null;
+			    } 
 			}
 		}).start();
+	}
+	
+	public void resume() {
+		draw();
+	}
+	
+	public void pause() {
+		isPause = true;
 	}
 	
 	public synchronized void clearParticle() {
@@ -90,6 +108,9 @@ public class FSParticleDrawManager {
 	}
 	
 	private void startCreateParticle() {
+		if(!Common.isPlay()) {
+			return;
+		}
 	    if(mTimer != null) {
 	        mTimer.cancel();
 	        mTimer = null;
